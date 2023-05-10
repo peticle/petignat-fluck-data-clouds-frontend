@@ -62,4 +62,13 @@ section#home {
         }
     }
 }
+
+@media only screen and (min-device-width: 768px) {
+
+    section#home {
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 0 2rem;
+    }
+}
 </style>
