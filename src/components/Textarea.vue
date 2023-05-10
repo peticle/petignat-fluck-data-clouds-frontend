@@ -15,13 +15,14 @@ const id: string = props.label.toLowerCase().substring(0, 5);
 
 <template>
     <div class="textarea">
-        <textarea :name="id" :id="`in-${id}`" :placeholder="placeholder" rows="2" :required="required"></textarea>
+        <textarea :name="id" :id="`in-${id}`" :placeholder="placeholder" rows="1" :required="required"></textarea>
         <label :for="`in-${id}`">Prompt</label>
     </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 div.textarea {
+    background: #fff;
     border: solid 1px #cbc7c8;
     border-radius: 5px;
     color: #554348;
@@ -45,6 +46,7 @@ div.textarea {
         min-height: 1.8em;
         min-width: 100%;
         outline: none;
+        resize: vertical;
 
         &:valid~label {
             color: #01a2a6;

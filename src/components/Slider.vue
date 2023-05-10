@@ -32,7 +32,7 @@ const value = ref(props.min);
     </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 div.slider {
     color: #554348;
     display: flex;
@@ -43,11 +43,12 @@ div.slider {
     padding: .6em;
 
     >input:last-of-type {
-        text-align: center;
         appearance: textfield;
         -moz-appearance: textfield;
+        background: none;
         border: none;
         outline: none;
+        text-align: center;
         width: 2em;
 
         &::-webkit-outer-spin-button,

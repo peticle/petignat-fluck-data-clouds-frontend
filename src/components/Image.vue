@@ -19,7 +19,7 @@ const props = defineProps({
     </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 div.image {
     overflow: hidden;
     text-align: center;
@@ -27,6 +27,7 @@ div.image {
     >img {
         background: #d7d7d8;
         border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         height: v-bind(size);
         object-fit: cover;
         padding: 1px;

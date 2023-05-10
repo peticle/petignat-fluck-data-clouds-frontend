@@ -30,7 +30,8 @@ div.button {
     }
 
     >label {
-        background: #01a2a6;
+        background: rgb(1, 162, 166);
+        background: linear-gradient(45deg, rgba(1, 162, 166, 1) 0%, rgba(41, 217, 194, 1) 100%);
         border-radius: 2em;
         color: #f2f2f2;
         display: block;
@@ -38,16 +39,16 @@ div.button {
         font-size: 1.2em;
         padding: .4em .6em;
         text-align: center;
-        transition: background .2s;
+        transition: filter .2s;
         user-select: none;
 
         &:hover {
-            background: #20acb0;
+            filter: saturate(50%);
             cursor: pointer;
         }
 
         &:active {
-            background: #049B9F;
+            filter: saturate(150%);
         }
     }
 }
